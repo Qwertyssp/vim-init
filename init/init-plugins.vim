@@ -167,6 +167,12 @@ if index(g:bundle_group, 'enhanced') >= 0
 	" 配对括号和引号自动补全
 	Plug 'Raimondi/delimitMate'
 
+	" A切换头文件
+	Plug 'vim-scripts/a.vim'
+
+	" 配色
+	Plug 'tomasr/molokai'
+
 	" 提供 gist 接口
 	Plug 'lambdalisue/vim-gista', { 'on': 'Gista' }
 	
@@ -528,6 +534,7 @@ call plug#end()
 "----------------------------------------------------------------------
 " YouCompleteMe 默认设置：YCM 需要你另外手动编译安装
 "----------------------------------------------------------------------
+Plug 'ycm-core/YouCompleteMe'
 
 " 禁用预览功能：扰乱视听
 let g:ycm_add_preview_to_completeopt = 0
